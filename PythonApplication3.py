@@ -1,14 +1,6 @@
-a = float(input("a = "))
-b = float(input("b = "))
-x = float(input("x = "))
+a = int(input("a = "))
+b = int(input("b = "))
 
-if a >= x and b >= x:
-    print(2)
-elif a >= x:
-    print("Mike")
-elif b >= x:
-    print("Ivan")
-elif a + b >= x:
-    print(1)
-else:
-    print(0)
+for i in range(a, b + 1):
+    if i % 2 == 0:
+        print(i, end = " ")
