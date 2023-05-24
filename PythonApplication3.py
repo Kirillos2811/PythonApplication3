@@ -1,6 +1,12 @@
-a = int(input("a = "))
-b = int(input("b = "))
+numbers = input().split(" ")
+number_set = set()
 
-for i in range(a, b + 1):
-    if i % 2 == 0:
-        print(i, end = " ")
+for number in numbers:
+    print(number, end = " ")
+
+    if number in number_set:
+        print("YES")
+    else:
+        print("NO")
+
+    number_set.add(number)
